@@ -1,0 +1,14 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<resources>
+	<!--Error Messages-->
+	<string name="AlertHeader">KMR Union Dues</string>
+	<string name="RestrictedLoginMsg">Your login has been restricted. Please contact the Union Office for further details.</string>
+	<string name="DeactivatedAppMsg">Your access to the Union has been restricted. Please contact the Union Office for further details.</string>
+	<string name="DeletedMemberMsg">Your do not have access to this union. Please contact the Union Office for further details.</string>
+	<string name="FillAlertMsg">Please fill up all fields</string>
+	<string name="IncorrectCredentialsMsg">ERROR: Incorrect credentials.</string>
+	<string name="IncorrectTokenMsg">The app access is not activated for your Union. Please contact your Union Office.</string>
+
+	
+
+</resources>

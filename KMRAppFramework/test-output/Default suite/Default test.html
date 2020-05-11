@@ -1,0 +1,740 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/9</td>
+</tr><tr>
+<td>Started on:</td><td>Thu May 07 21:02:02 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (147 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.tests.LoginTests.beforeTest()'><b>beforeTest</b><br>Test class: com.qa.tests.LoginTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;platformName&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\Anik\AppData\Local\Temp\testng-eclipse-925103824\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace736778932", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace736778932'><pre>org.testng.TestNGException: 
+Parameter &apos;platformName&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\Anik\AppData\Local\Temp\testng-eclipse-925103824\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>-1588865522</td>
+<td>com.qa.tests.LoginTests@401e7803</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.tests.LoginTests.beforeClass()'><b>beforeClass</b><br>Test class: com.qa.tests.LoginTests</td>
+<td></td>
+<td>-1588865522</td>
+<td>com.qa.tests.LoginTests@401e7803</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.beforeMethod()'><b>beforeMethod</b><br>Test class: com.qa.tests.LoginTests</td>
+<td></td>
+<td>-1588865522</td>
+<td>com.qa.tests.LoginTests@401e7803</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.beforeMethod()'><b>beforeMethod</b><br>Test class: com.qa.tests.LoginTests</td>
+<td></td>
+<td>-1588865523</td>
+<td>com.qa.tests.LoginTests@401e7803</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.beforeMethod()'><b>beforeMethod</b><br>Test class: com.qa.tests.LoginTests</td>
+<td></td>
+<td>-1588865523</td>
+<td>com.qa.tests.LoginTests@401e7803</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.beforeMethod()'><b>beforeMethod</b><br>Test class: com.qa.tests.LoginTests</td>
+<td></td>
+<td>-1588865523</td>
+<td>com.qa.tests.LoginTests@401e7803</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.beforeMethod()'><b>beforeMethod</b><br>Test class: com.qa.tests.LoginTests</td>
+<td></td>
+<td>-1588865523</td>
+<td>com.qa.tests.LoginTests@401e7803</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.beforeMethod()'><b>beforeMethod</b><br>Test class: com.qa.tests.LoginTests</td>
+<td></td>
+<td>-1588865523</td>
+<td>com.qa.tests.LoginTests@401e7803</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.beforeMethod()'><b>beforeMethod</b><br>Test class: com.qa.tests.LoginTests</td>
+<td></td>
+<td>-1588865523</td>
+<td>com.qa.tests.LoginTests@401e7803</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.beforeMethod()'><b>beforeMethod</b><br>Test class: com.qa.tests.LoginTests</td>
+<td></td>
+<td>-1588865523</td>
+<td>com.qa.tests.LoginTests@401e7803</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.beforeMethod()'><b>beforeMethod</b><br>Test class: com.qa.tests.LoginTests</td>
+<td></td>
+<td>-1588865523</td>
+<td>com.qa.tests.LoginTests@401e7803</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.afterMethod()'><b>afterMethod</b><br>Test class: com.qa.tests.LoginTests</td>
+<td></td>
+<td>-1588865522</td>
+<td>com.qa.tests.LoginTests@401e7803</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.afterMethod()'><b>afterMethod</b><br>Test class: com.qa.tests.LoginTests</td>
+<td></td>
+<td>-1588865523</td>
+<td>com.qa.tests.LoginTests@401e7803</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.afterMethod()'><b>afterMethod</b><br>Test class: com.qa.tests.LoginTests</td>
+<td></td>
+<td>-1588865523</td>
+<td>com.qa.tests.LoginTests@401e7803</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.afterMethod()'><b>afterMethod</b><br>Test class: com.qa.tests.LoginTests</td>
+<td></td>
+<td>-1588865523</td>
+<td>com.qa.tests.LoginTests@401e7803</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.afterMethod()'><b>afterMethod</b><br>Test class: com.qa.tests.LoginTests</td>
+<td></td>
+<td>-1588865523</td>
+<td>com.qa.tests.LoginTests@401e7803</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.afterMethod()'><b>afterMethod</b><br>Test class: com.qa.tests.LoginTests</td>
+<td></td>
+<td>-1588865523</td>
+<td>com.qa.tests.LoginTests@401e7803</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.afterMethod()'><b>afterMethod</b><br>Test class: com.qa.tests.LoginTests</td>
+<td></td>
+<td>-1588865523</td>
+<td>com.qa.tests.LoginTests@401e7803</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.afterMethod()'><b>afterMethod</b><br>Test class: com.qa.tests.LoginTests</td>
+<td></td>
+<td>-1588865523</td>
+<td>com.qa.tests.LoginTests@401e7803</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.afterMethod()'><b>afterMethod</b><br>Test class: com.qa.tests.LoginTests</td>
+<td></td>
+<td>-1588865523</td>
+<td>com.qa.tests.LoginTests@401e7803</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.afterClass()'><b>afterClass</b><br>Test class: com.qa.tests.LoginTests</td>
+<td></td>
+<td>-1588865523</td>
+<td>com.qa.tests.LoginTests@401e7803</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.afterTest()'><b>afterTest</b><br>Test class: com.qa.tests.LoginTests</td>
+<td></td>
+<td>-1588865523</td>
+<td>com.qa.tests.LoginTests@401e7803</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.tests.LoginTests.Login_with_Deactivated_App_Access()'><b>Login_with_Deactivated_App_Access</b><br>Test class: com.qa.tests.LoginTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;platformName&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\Anik\AppData\Local\Temp\testng-eclipse-925103824\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace195615004", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace195615004'><pre>org.testng.TestNGException: 
+Parameter &apos;platformName&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\Anik\AppData\Local\Temp\testng-eclipse-925103824\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.tests.LoginTests@401e7803</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.Login_with_Restricted_Userid()'><b>Login_with_Restricted_Userid</b><br>Test class: com.qa.tests.LoginTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;platformName&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\Anik\AppData\Local\Temp\testng-eclipse-925103824\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1641313620", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1641313620'><pre>org.testng.TestNGException: 
+Parameter &apos;platformName&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\Anik\AppData\Local\Temp\testng-eclipse-925103824\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.tests.LoginTests@401e7803</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.Login_with_Special_Characters_in_Password()'><b>Login_with_Special_Characters_in_Password</b><br>Test class: com.qa.tests.LoginTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;platformName&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\Anik\AppData\Local\Temp\testng-eclipse-925103824\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1295226194", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1295226194'><pre>org.testng.TestNGException: 
+Parameter &apos;platformName&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\Anik\AppData\Local\Temp\testng-eclipse-925103824\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.tests.LoginTests@401e7803</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.Login_with_is_Deleted_Member()'><b>Login_with_is_Deleted_Member</b><br>Test class: com.qa.tests.LoginTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;platformName&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\Anik\AppData\Local\Temp\testng-eclipse-925103824\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1704064279", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1704064279'><pre>org.testng.TestNGException: 
+Parameter &apos;platformName&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\Anik\AppData\Local\Temp\testng-eclipse-925103824\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.tests.LoginTests@401e7803</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.alert_Fill_All_Fields()'><b>alert_Fill_All_Fields</b><br>Test class: com.qa.tests.LoginTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;platformName&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\Anik\AppData\Local\Temp\testng-eclipse-925103824\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1296674576", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1296674576'><pre>org.testng.TestNGException: 
+Parameter &apos;platformName&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\Anik\AppData\Local\Temp\testng-eclipse-925103824\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.tests.LoginTests@401e7803</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.incorrect_Password_login()'><b>incorrect_Password_login</b><br>Test class: com.qa.tests.LoginTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;platformName&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\Anik\AppData\Local\Temp\testng-eclipse-925103824\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2011482127", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2011482127'><pre>org.testng.TestNGException: 
+Parameter &apos;platformName&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\Anik\AppData\Local\Temp\testng-eclipse-925103824\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.tests.LoginTests@401e7803</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.incorrect_Token_login()'><b>incorrect_Token_login</b><br>Test class: com.qa.tests.LoginTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;platformName&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\Anik\AppData\Local\Temp\testng-eclipse-925103824\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace577405636", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace577405636'><pre>org.testng.TestNGException: 
+Parameter &apos;platformName&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\Anik\AppData\Local\Temp\testng-eclipse-925103824\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.tests.LoginTests@401e7803</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.incorrect_Userid_login()'><b>incorrect_Userid_login</b><br>Test class: com.qa.tests.LoginTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;platformName&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\Anik\AppData\Local\Temp\testng-eclipse-925103824\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1146147158", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1146147158'><pre>org.testng.TestNGException: 
+Parameter &apos;platformName&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\Anik\AppData\Local\Temp\testng-eclipse-925103824\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.tests.LoginTests@401e7803</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.valid_login()'><b>valid_login</b><br>Test class: com.qa.tests.LoginTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;platformName&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\Anik\AppData\Local\Temp\testng-eclipse-925103824\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace500772834", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace500772834'><pre>org.testng.TestNGException: 
+Parameter &apos;platformName&apos; is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\Anik\AppData\Local\Temp\testng-eclipse-925103824\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.tests.LoginTests@401e7803</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,50 @@
+{
+	"DeactivatedAppAccess":{
+		"userid": "test13AA",
+		"password":"test",
+		"token": "XT13"
+	},
+	
+	"RestrictedUserid":{
+		"userid": "test13AA",
+		"password":"test",
+		"token": "XT13"
+	},
+	
+	"IsDeletedMember":{
+		"userid": "test13AA",
+		"password":"test",
+		"token": "XT13"
+	},
+	
+	"alertFill":{
+		"userid": "test13",
+		"password":"test",
+		"token": "XT13"
+	},
+		"incorrectUserid":{
+		"userid": "test111",
+		"password":"test",
+		"token": "XT13"
+	},
+		"incorrectPassword":{
+		"userid": "test13",
+		"password":"testabc123",
+		"token": "XT13"
+	},
+		"incorrectToken":{
+		"userid": "test13",
+		"password":"test",
+		"token": "XT111"
+	},
+		"validlogin":{
+		"userid": "test13",
+		"password":"test",
+		"token": "XT13"
+	},
+		"SpecialCharacterPwLogin":{
+		"userid": "",
+		"password":"",
+		"token": ""
+	}
+}
